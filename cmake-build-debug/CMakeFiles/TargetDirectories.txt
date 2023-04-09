@@ -1,10 +1,10 @@
-/home/milan/Desktop/RG/VN/project_base/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/milan/Desktop/RG/VN/project_base/cmake-build-debug/CMakeFiles/project_base.dir
-/home/milan/Desktop/RG/VN/project_base/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/milan/Desktop/RG/VN/project_base/cmake-build-debug/CMakeFiles/STB_IMAGE.dir
-/home/milan/Desktop/RG/VN/project_base/cmake-build-debug/libs/glad/CMakeFiles/edit_cache.dir
-/home/milan/Desktop/RG/VN/project_base/cmake-build-debug/libs/glad/CMakeFiles/rebuild_cache.dir
-/home/milan/Desktop/RG/VN/project_base/cmake-build-debug/libs/glad/CMakeFiles/glad.dir
-/home/milan/Desktop/RG/VN/project_base/cmake-build-debug/libs/imgui/CMakeFiles/rebuild_cache.dir
-/home/milan/Desktop/RG/VN/project_base/cmake-build-debug/libs/imgui/CMakeFiles/edit_cache.dir
-/home/milan/Desktop/RG/VN/project_base/cmake-build-debug/libs/imgui/CMakeFiles/imgui.dir
+/home/viktorski/Преузимања/Projekat Racunarska Grafike-20230409T141745Z-001/Projekat Racunarska Grafike/project_base/cmake-build-debug/CMakeFiles/STB_IMAGE.dir
+/home/viktorski/Преузимања/Projekat Racunarska Grafike-20230409T141745Z-001/Projekat Racunarska Grafike/project_base/cmake-build-debug/CMakeFiles/project_base.dir
+/home/viktorski/Преузимања/Projekat Racunarska Grafike-20230409T141745Z-001/Projekat Racunarska Grafike/project_base/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/viktorski/Преузимања/Projekat Racunarska Grafike-20230409T141745Z-001/Projekat Racunarska Grafike/project_base/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/viktorski/Преузимања/Projekat Racunarska Grafike-20230409T141745Z-001/Projekat Racunarska Grafike/project_base/cmake-build-debug/libs/glad/CMakeFiles/glad.dir
+/home/viktorski/Преузимања/Projekat Racunarska Grafike-20230409T141745Z-001/Projekat Racunarska Grafike/project_base/cmake-build-debug/libs/glad/CMakeFiles/edit_cache.dir
+/home/viktorski/Преузимања/Projekat Racunarska Grafike-20230409T141745Z-001/Projekat Racunarska Grafike/project_base/cmake-build-debug/libs/glad/CMakeFiles/rebuild_cache.dir
+/home/viktorski/Преузимања/Projekat Racunarska Grafike-20230409T141745Z-001/Projekat Racunarska Grafike/project_base/cmake-build-debug/libs/imgui/CMakeFiles/imgui.dir
+/home/viktorski/Преузимања/Projekat Racunarska Grafike-20230409T141745Z-001/Projekat Racunarska Grafike/project_base/cmake-build-debug/libs/imgui/CMakeFiles/edit_cache.dir
+/home/viktorski/Преузимања/Projekat Racunarska Grafike-20230409T141745Z-001/Projekat Racunarska Grafike/project_base/cmake-build-debug/libs/imgui/CMakeFiles/rebuild_cache.dir

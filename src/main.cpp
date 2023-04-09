@@ -33,6 +33,8 @@ unsigned int loadCubemap(vector<std::string> faces);
 const unsigned int SCR_WIDTH = 800;
 const unsigned int SCR_HEIGHT = 600;
 bool poly = false;
+bool blinn = false;
+bool blinnKeyPressed = false;
 
 // camera
 
@@ -165,6 +167,9 @@ int main() {
     glEnable(GL_DEPTH_TEST);
     glEnable(GL_BLEND);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+
+    glEnable(GL_CULL_FACE);
+    glCullFace(GL_BACK);
 
     // build and compile shaders
     // -------------------------
@@ -308,6 +313,7 @@ int main() {
         ourShader.setFloat("pointLight.quadratic", programState->pointLight.quadratic);
         ourShader.setVec3("viewPosition", programState->camera.Position);
         ourShader.setFloat("material.shininess", 32.0f);
+        ourShader.setInt("blinn", blinn);
         // view/projection transformations
         glm::mat4 projection = glm::perspective(glm::radians(programState->camera.Zoom),
                                                 (float) SCR_WIDTH / (float) SCR_HEIGHT, 0.1f, 100.0f);
@@ -330,7 +336,9 @@ int main() {
         modelLight = glm::rotate(modelLight,glm::radians(programState->vecRotate.y), glm::vec3(0.0f ,1.0f, 0.0f));
         modelLight = glm::rotate(modelLight,glm::radians(programState->vecRotate.z), glm::vec3(0.0f ,0.0f, 1.0f));
         ourShader.setMat4("model", modelLight);
+        glDisable(GL_CULL_FACE);
         lightModel.Draw(ourShader);
+        glEnable(GL_CULL_FACE);
 
         // draw skybox
         //___________________________________________________________________________________________
@@ -350,7 +358,7 @@ int main() {
         if (programState->ImGuiEnabled)
             DrawImGui(programState);
 
-
+        std::cout << (blinn ? "Blinn-Phong" : "Phong") << std::endl;
 
         // glfw: swap buffers and poll IO events (keys pressed/released, mouse moved etc.)
         // -------------------------------------------------------------------------------
@@ -387,6 +395,13 @@ void processInput(GLFWwindow *window) {
         programState->camera.ProcessKeyboard(LEFT, deltaTime);
     if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
         programState->camera.ProcessKeyboard(RIGHT, deltaTime);
+
+    if (glfwGetKey(window, GLFW_KEY_B) == GLFW_PRESS && !blinnKeyPressed) {
+        blinn = !blinn;
+        blinnKeyPressed = true;
+    }
+    if (glfwGetKey(window, GLFW_KEY_B) == GLFW_RELEASE)
+        blinnKeyPressed = false;
 }
 
 // glfw: whenever the window size changed (by OS or user resize) this callback function executes

@@ -1,4 +1,4 @@
-# Install script for directory: /home/milan/Desktop/RG/VN/project_base/libs/glad
+# Install script for directory: /home/viktorski/Преузимања/Projekat Racunarska Grafike-20230409T141745Z-001/Projekat Racunarska Grafike/project_base/libs/glad
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
